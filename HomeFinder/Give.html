@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give a dog/cat</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="Project.js"></script>
+</head>
+<body onload="displayTime()">
+    <div id="header">HomeFinder
+        <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+        <div id="time" onload="displayTime()"></div>
+    </div>
+    <div class="container">
+    <div id="content-area"><form onsubmit=" return GiveInputCheck()" method="POST" action="/submit-give">
+        <fieldset>
+        <legend>Pet Information</legend><br><br>
+        <label>Species:</label>
+        <label><input type="radio" name="Species" value="Dog" id="Dog">Dog</label>
+        <label><input type="radio" name="Species" value="Cat" id="Cat">Cat</label><br><br>
+        <label>Breed:</label>
+        <label><input type="text" name="breed" id="breedText"></label>
+        <label><input type="checkbox" name="breed" value="NA" id="breedMixed">Mixed Breed</label><br><br>
+        <label>Age:</label>
+        <select name="Age">
+            <option>Less than 1 years old</option>
+            <option>1-2 years old</option>
+            <option>3-6 years old</option>
+            <option>7-10 years old</option>
+            <option>More than 10 years old</option>
+            <option>Doesn't matter</option>
+        </select> <br> <br>
+
+        <label>Gender</label>
+        <select name="Gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select> <br> <br>
+        <label>Personality (Pick as many as apply):</label> <br>
+            <label> <input type = "checkbox" name ="AlongDogs"
+                value = "dogs" >
+                Gets along with other dogs </label>
+                <label> <input type = "checkbox" name ="AlongCats"
+                value = "cats" >
+                Gets along with other cats </label>
+                <label> <input type = "checkbox" name ="AlongChildren"
+                value= "children" >
+                Gets along with small children</label><br>
+                <br>
+                <label>Comments:</label>
+                <label><input type="text" name="Comments" style="width:500px;"></label></fieldset><br><br><fieldset>
+                    <legend>Personnal Information</legend>
+                <label>First Name:</label>
+                <label><input type="text" name="FirstName" id="FirstName"></label><br><br>
+                <label>Last Name:</label>
+                <label><input type="text" name="LastName" id="LastName"></label><br><br>
+                <label>Email:</label>
+                <label><input type="email" name="Email" id="Email" required></label></fieldset><br><br>
+                <input type="submit">
+                <input type="reset" value="Clear">
+
+    </form></div>
+        <aside class="sidemenu"><ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a  href="Find.html">Find a dog/cat</a></li>
+        <li><a href="DogCare.html">Dog Care</a></li>
+        <li><a href="CatCare.html">Cat Care</a></li>
+        <li><a href="Create.html">Create an account</a></li>
+        <li><a class="active" href="/give">Have a pet to give away</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul></aside>
+    
+</div>
+   
+    <div id="footer"><a href="Privacy.html">Privacy\Disclaimer Statement</a></div>
+</body>
+</html>

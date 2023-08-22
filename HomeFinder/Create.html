@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a dog/cat</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="Project.js"></script>
+</head>
+<body onload="displayTime()">
+    <div id="header">HomeFinder
+        <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+        <div id="time" onload="displayTime()"></div>
+    </div>
+    <div class="container">
+    <div id="content-area">
+        <form action="/submit-create" method="POST" onsubmit=" return CreateChecker()">
+            <label for="username">Create Username (must only contain letters and digits)</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Create Password (must be at least 4 characters long, be letters and digits only have at least one digit and one letter)</label>
+            <input type="text" name="password" id="password" required><br><br>
+
+                <button type="submit">Submit</button>
+                <input type="reset" value="Clear">
+
+    </form></div>
+        <aside class="sidemenu"><ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Find.html">Find a dog/cat</a></li>
+        <li><a href="DogCare.html">Dog Care</a></li>
+        <li><a href="CatCare.html">Cat Care</a></li>
+        <li><a class="active" href="Create.html">Create an account</a></li>
+        <li><a href="/give">Have a pet to give away</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul></aside>
+    
+</div>
+   
+    <div id="footer"><a href="Privacy.html">Privacy\Disclaimer Statement</a></div>
+</body>
+</html>
