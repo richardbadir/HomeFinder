@@ -1,0 +1,1 @@
+Dog#undefined#Less than 1 years old#Male#Gets along with other dogs#Gets along with other cats#Gets along with small childrenCat#undefined#Less than 1 years old#Male#Gets along with other dogsDog#undefined#7-10 years old#Female#Gets along with other catsDog#undefined#Less than 1 years old#Male
